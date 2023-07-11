@@ -12,7 +12,10 @@ export class AppComponent{
     this.audio.volume = 0.4;
   }
   private audio;
+  private started:boolean = false;
   startTimer(): void {
+    if (this.started) return;
+    this.started = true;
     this._setNext();
   }
 
@@ -53,50 +56,53 @@ export class AppComponent{
     "name": "Prepare",
     "time": 10
   }, {
-    "name": "Skaters", //1
+    "name": "Skaters  1/8", //1
     "time": 20
   }, {
     "name": "Rest",
     "time": 10
   }, {
-    "name": "Sentadillas", //2
+    "name": "Sentadillas  2/8", //2
     "time": 20
   }, {
     "name": "Rest",
     "time": 10
   }, {
-    "name": "Salto, burpee codos", //3
+    "name": "Salto, burpee codos  3/8", //3
     "time": 20
   }, {
     "name": "Rest",
     "time": 10
   }, {
-    "name": "Mano al cielo, codo al suelo", //4
+    "name": "Mano al cielo, codo al suelo  4/8", //4
     "time": 20
   }, {
     "name": "Rest",
     "time": 10
   }, {
-    "name": "Jumping jacks", //5
+    "name": "Jumping jacks  5/8", //5
     "time": 20
   }, {
     "name": "Rest",
     "time": 10
   }, {
-    "name": "Plancha", //6
+    "name": "Plancha  6/8", //6
     "time": 20
   }, {
     "name": "Rest",
     "time": 10
   }, {
-    "name": "Sentadillas con salto", //7
+    "name": "Sentadillas con salto 7/8", //7
     "time": 20
   }, {
     "name": "Rest",
     "time": 10
   }, {
-    "name": "8 flexiones", //8
+    "name": "8 flexiones  8/8", //8
     "time": 20
+  }, {
+    "name": "Descansa mucho", //8
+    "time": 50
   },
   ]
 }
